@@ -26,7 +26,6 @@ def handle_request(request):
 
 if __name__ == "__main__":
     os.environ['FLASK_ENV'] = 'production'
-    app.run()
 
 # Create a basic handler function to return the response
 def handler(request):
