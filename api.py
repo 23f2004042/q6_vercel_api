@@ -1,5 +1,5 @@
 import json
-
+import os
 from flask import Flask, request
 
 app = Flask(__name__)
@@ -25,6 +25,7 @@ def handle_request(request):
     return json.dumps(response)
 
 if __name__ == "__main__":
+    os.environ['FLASK_ENV'] = 'production'
     app.run()
 
 # Create a basic handler function to return the response
